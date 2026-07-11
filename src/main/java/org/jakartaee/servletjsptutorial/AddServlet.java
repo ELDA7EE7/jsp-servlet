@@ -14,9 +14,10 @@ public class AddServlet extends HttpServlet {
             int num2 = Integer.parseInt(request.getParameter("num2"));
             int sum = num1 + num2;
             response.getWriter().println("Sum: " + sum);
-            RequestDispatcher dispatcher = request.getRequestDispatcher("square");
-            request.setAttribute("num", sum);
-            dispatcher.forward(request, response);
+//            RequestDispatcher dispatcher = request.getRequestDispatcher("square");
+//            request.setAttribute("num", sum);
+//            dispatcher.forward(request, response);
+            response.sendRedirect("square?num=" + sum);
         } catch (NumberFormatException e) {
             response. getWriter().println("Invalid input. Please enter valid integers.");
         } catch (Exception e) {
