@@ -3,13 +3,16 @@ package org.jakartaee.servletjsptutorial;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 
 import java.io.IOException;
 
 public class SquareServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         try {
-            int num = Integer.parseInt(request.getParameter("num"));
+            HttpSession session = request.getSession();
+            int num = (int) session.getAttribute("num");
+            session.removeAttribute("num");
             int square = num * num;
             response.getWriter().println("Square: " + square);
         } catch (NumberFormatException e) {
