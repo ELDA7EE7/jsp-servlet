@@ -20,4 +20,27 @@
         <servlet-name>SquareServlet</servlet-name>
         <url-pattern>/square</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>MyServlet</servlet-name>
+        <servlet-class>org.jakartaee.servletjsptutorial.MyServlet</servlet-class>
+        <init-param>
+            <param-name>name</param-name>
+            <param-value>Mohamed</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MyServlet</servlet-name>
+        <url-pattern>/my</url-pattern>
+    </servlet-mapping>
+
+    <context-param>
+        <param-name>name</param-name>
+        <param-value>mazen</param-value>
+    </context-param>
+    
+    <context-param>
+        <param-name>Phone</param-name>
+        <param-value>Samsung</param-value>
+    </context-param>
 </web-app>
