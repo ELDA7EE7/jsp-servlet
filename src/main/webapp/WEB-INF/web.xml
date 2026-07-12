@@ -3,36 +3,36 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
          version="6.0">
-    <servlet>
-        <servlet-name>AddServlet</servlet-name>
-        <servlet-class>org.jakartaee.servletjsptutorial.AddServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>AddServlet</servlet-name>
-        <url-pattern>/add</url-pattern>
-    </servlet-mapping>
+<!--    <servlet>-->
+<!--        <servlet-name>AddServlet</servlet-name>-->
+<!--        <servlet-class>org.jakartaee.servletjsptutorial.AddServlet</servlet-class>-->
+<!--    </servlet>-->
+<!--    <servlet-mapping>-->
+<!--        <servlet-name>AddServlet</servlet-name>-->
+<!--        <url-pattern>/add</url-pattern>-->
+<!--    </servlet-mapping>-->
 
-    <servlet>
-        <servlet-name>SquareServlet</servlet-name>
-        <servlet-class>org.jakartaee.servletjsptutorial.SquareServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>SquareServlet</servlet-name>
-        <url-pattern>/square</url-pattern>
-    </servlet-mapping>
+<!--    <servlet>-->
+<!--        <servlet-name>SquareServlet</servlet-name>-->
+<!--        <servlet-class>org.jakartaee.servletjsptutorial.SquareServlet</servlet-class>-->
+<!--    </servlet>-->
+<!--    <servlet-mapping>-->
+<!--        <servlet-name>SquareServlet</servlet-name>-->
+<!--        <url-pattern>/square</url-pattern>-->
+<!--    </servlet-mapping>-->
 
-    <servlet>
-        <servlet-name>MyServlet</servlet-name>
-        <servlet-class>org.jakartaee.servletjsptutorial.MyServlet</servlet-class>
-        <init-param>
-            <param-name>name</param-name>
-            <param-value>Mohamed</param-value>
-        </init-param>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>MyServlet</servlet-name>
-        <url-pattern>/my</url-pattern>
-    </servlet-mapping>
+<!--    <servlet>-->
+<!--        <servlet-name>MyServlet</servlet-name>-->
+<!--        <servlet-class>org.jakartaee.servletjsptutorial.MyServlet</servlet-class>-->
+<!--        <init-param>-->
+<!--            <param-name>name</param-name>-->
+<!--            <param-value>Mohamed</param-value>-->
+<!--        </init-param>-->
+<!--    </servlet>-->
+<!--    <servlet-mapping>-->
+<!--        <servlet-name>MyServlet</servlet-name>-->
+<!--        <url-pattern>/my</url-pattern>-->
+<!--    </servlet-mapping>-->
 
     <context-param>
         <param-name>name</param-name>

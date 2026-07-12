@@ -1,9 +1,10 @@
 package org.jakartaee.servletjsptutorial;
 
+import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.*;
 
 import java.io.IOException;
-
+@WebServlet("/square")
 public class SquareServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         try {
